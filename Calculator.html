@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, inital-scale=1">
+	<title>Calculater</title>
+</head>
+<body id="background">
+	
+
+<div class="main">
+	<form name="form">
+		<input class="textview" name="textview">
+	</form>
+		<table>
+			<tr>
+			<td><input class="button" type="button" value="C" onclick="clean()"></td>
+			<td><input class="button" type="button" value="<" onclick="back()" ></td>
+			<td><input class="button" type="button" value="/" onclick="insrt('/')"></td>
+			<td><input class="button" type="button" value="X" onclick="insrt('*')"></td>
+		</tr>
+		<tr>
+			<td><input class="button" type="button" value="7" onclick="insrt(7)"></td>
+			<td><input class="button" type="button" value="8" onclick="insrt(8)"></td>
+			<td><input class="button" type="button" value="9" onclick="insrt(9)"></td>
+			<td><input class="button" type="button" value="-" onclick="insrt('-')"></td>
+		</tr>
+		<tr>
+			<td><input class="button" type="button" value="4" onclick="insrt(4)"></td>
+			<td><input class="button" type="button" value="5" onclick="insrt(5)"></td>
+			<td><input class="button" type="button" value="6" onclick="insrt(6)"></td>
+			<td><input type="button" value="+" onclick="insrt('+')"></td>
+		</tr>
+		<tr>
+			<td><input class="button" type="button" value="1" onclick="insrt(1)"></td>
+			<td><input class="button" type="button" value="2" onclick="insrt(2)"></td>
+			<td><input class="button" type="button" value="3" onclick="insrt(3)"></td>
+			<td><input class="button" type="button" value="=" onclick="equal()"></td>
+		</tr>	
+		<tr>
+			<td colspan="2"><input class="button" style="width:50px" type="button" value="0" onclick="insrt(0)"></td>
+			<td colspan="2"><input class="button" style="width: 50px" type="button" value="." onclick="insrt('.')"></td>
+			
+		</tr>
+		</table>
+		 
+
+</div>
+</body>
+
+</html>
